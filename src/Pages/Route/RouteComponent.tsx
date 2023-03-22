@@ -8,6 +8,7 @@ import StudentsPage from "../StudentsPage";
 import KryuchkovNickPage from "../StudentPage/KryuchkovNick/KryuchkovNickPage";
 
 const RouteComponent = () => {
+
     return (
         <HashRouter>
             <Routes>
@@ -15,6 +16,7 @@ const RouteComponent = () => {
                     <Route index element={<StudentsPage/>} />
 
                     <Route path={'teacher'} element={<KryuchkovNickPage/>} />
+
                 </Route>
             </Routes>
         </HashRouter>
