@@ -6,6 +6,7 @@ import {
 import MainPage from "../MainPage";
 import StudentsPage from "../StudentsPage";
 import KryuchkovNickPage from "../StudentPage/KryuchkovNick/KryuchkovNickPage";
+import SysolovNikitaPage from "../StudentPage/SysolovNikita/SysolovNikitaPage";
 
 const RouteComponent = () => {
     return (
@@ -15,6 +16,7 @@ const RouteComponent = () => {
                     <Route index element={<StudentsPage/>} />
 
                     <Route path={'teacher'} element={<KryuchkovNickPage/>} />
+                    <Route path={'SysolovNikita'} element={<SysolovNikitaPage/>} />
                 </Route>
             </Routes>
         </HashRouter>
