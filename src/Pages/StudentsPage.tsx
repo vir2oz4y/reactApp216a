@@ -18,6 +18,14 @@ const StudentsPage = () => {
                 />
 
                 <StudentElement
+
+                    fio={'Музыченко Анастасия Сергеевна'}
+                    description={'Бакалавр'}
+                    imageSrc={'https://media.istockphoto.com/id/172772174/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%82%D0%BE%D0%B3%D0%B0.jpg?s=1024x1024&w=is&k=20&c=hfb_ZBfz9rv_TzRL6tBsXQXjdA33b58X_zFh1DTCHWo='}
+                    navigateTo={'/MuzychenkoStacy'}
+                />
+
+                <StudentElement  
                     fio={'Акюз Лейла '}
                     description={'мы сплит'}
                     imageSrc={'https://zooclub.ru/attach/8000/8863.jpg'}
