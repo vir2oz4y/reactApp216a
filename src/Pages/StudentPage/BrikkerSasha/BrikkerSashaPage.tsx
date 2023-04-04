@@ -1,34 +1,34 @@
 import React from 'react';
 import Header from "../../../Components/Header/Header";
 import ContentBlock from "../../../Components/ContentBlock/ContentBlock";
-import {List, ListItem, ListItemButton, ListItemText} from '@mui/material';
-import {useNavigate} from "react-router-dom";
-
-
-const KryuchkovNickPage = () => {
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import { useNavigate } from 'react-router-dom';
+const BrikkerSashaPage = () => {
 
     const navigate = useNavigate();
 
     return (
+
         <div>
-            <Header studentFio={'Крючков Николай'}/>
+            <Header studentFio={'Brikker Sasha'} />
 
             <ContentBlock>
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton
-                            onClick={()=>navigate('test1')}
-                        >
+                        <ListItemButton onClick={()=>navigate('test1')} >
+
                             <ListItemText primary="Test1" />
                         </ListItemButton>
                     </ListItem>
-
                     <ListItem disablePadding>
-                        <ListItemButton
-                            onClick={()=>navigate('test2')}
-                        >
-                            <ListItemText primary="Test2" />
+                        <ListItemButton onClick={() => navigate('test2')}>
+                            <ListItemText primary="Test2"/>
                         </ListItemButton>
+
                     </ListItem>
                 </List>
             </ContentBlock>
@@ -36,4 +36,4 @@ const KryuchkovNickPage = () => {
     );
 };
 
-export default KryuchkovNickPage;
+export default BrikkerSashaPage;
