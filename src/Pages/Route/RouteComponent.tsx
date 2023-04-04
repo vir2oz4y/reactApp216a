@@ -17,6 +17,7 @@ import SysolovNikitaPage from "../StudentPage/SysolovNikita/SysolovNikitaPage";
 
 
 const RouteComponent = () => {
+
     return (
         <HashRouter>
             <Routes>
@@ -26,7 +27,6 @@ const RouteComponent = () => {
                     <Route path={'teacher'} element={<KryuchkovNickPage />} />
                     <Route path={'akyuzleyla'} element={<AkyuzLeylaPage />} />
                     <Route path={'brikkersasha'} element={<BrikkerSashaPage />} />
-                    <Route path={'teacher'} element={<KryuchkovNickPage/>} />
                     <Route path={'SnegirevaPolina'} element={<SnegirevaPolinaPage/>} />
                     <Route path={'MuzychenkoStacy'} element={<MuzychenkoStacyPage/>} />
                     <Route path={'ZhukovaLiza'} element={<ZhukovaLizaPage/>} />
