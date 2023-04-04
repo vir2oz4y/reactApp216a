@@ -16,7 +16,7 @@ const StudentsPage = () => {
                     imageSrc={'https://sky.pro/media/wp-content/uploads/2022/03/glavnaya-9-1.png'}
                     navigateTo={'/teacher'}
                 />
-
+    
                 <StudentElement
                     fio={'Снегирева Полина Юрьевна'}
                     description={'Второе высшее'}
@@ -65,6 +65,13 @@ const StudentsPage = () => {
                     imageSrc={'https://sun9-51.userapi.com/impg/hPye9IcdTqZhMPooq2Fg-_-iPtPfpROLpvo7WQ/D_593QgIme8.jpg?size=960x1280&quality=95&sign=b272567851b9e8f80c9bb2e402208d5d&type=album'}
                     navigateTo={'/SysolovNikita'}
                 />
+                
+                <StudentElement
+                    fio={'Титовец Виктория Алексеевна'}
+                    description={'大学生'}
+                    imageSrc={'https://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg'} //ttps://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg
+                    navigateTo={'/vik'}
+                 />
             </Stack>
         </div>
     )
