@@ -1,32 +1,26 @@
 import React from 'react';
 import Header from "../../../Components/Header/Header";
 import ContentBlock from "../../../Components/ContentBlock/ContentBlock";
-import {List, ListItem, ListItemButton, ListItemText} from '@mui/material';
+import {List, ListItem, ListItemButton, ListItemText} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 
-
-const KryuchkovNickPage = () => {
+const SysolovNikitaPage = () => {
 
     const navigate = useNavigate();
 
     return (
         <div>
-            <Header studentFio={'Крючков Николай'}/>
+            <Header studentFio={'Сысолов Никита'}/>
 
             <ContentBlock>
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton
-                            onClick={()=>navigate('test1')}
-                        >
+                        <ListItemButton onClick={()=>navigate('test1')}>
                             <ListItemText primary="Test1" />
                         </ListItemButton>
                     </ListItem>
-
                     <ListItem disablePadding>
-                        <ListItemButton
-                            onClick={()=>navigate('test2')}
-                        >
+                        <ListItemButton onClick={()=>navigate('test2')}>
                             <ListItemText primary="Test2" />
                         </ListItemButton>
                     </ListItem>
@@ -36,4 +30,4 @@ const KryuchkovNickPage = () => {
     );
 };
 
-export default KryuchkovNickPage;
+export default SysolovNikitaPage;

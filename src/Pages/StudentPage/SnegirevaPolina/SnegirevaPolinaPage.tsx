@@ -4,31 +4,26 @@ import ContentBlock from "../../../Components/ContentBlock/ContentBlock";
 import {List, ListItem, ListItemButton, ListItemText} from '@mui/material';
 import {useNavigate} from "react-router-dom";
 
-
-const KryuchkovNickPage = () => {
-
+const SnegirevaPolinaPage = () => {
     const navigate = useNavigate();
 
     return (
         <div>
-            <Header studentFio={'Крючков Николай'}/>
+            <Header studentFio={'Снегирева Полина'}/>
 
             <ContentBlock>
                 <List>
                     <ListItem disablePadding>
                         <ListItemButton
-                            onClick={()=>navigate('test1')}
+                        onClick ={()=>navigate('test1')}
                         >
-                            <ListItemText primary="Test1" />
+                            <ListItemText primary="test1" />
                         </ListItemButton>
                     </ListItem>
-
-                    <ListItem disablePadding>
-                        <ListItemButton
-                            onClick={()=>navigate('test2')}
-                        >
-                            <ListItemText primary="Test2" />
-                        </ListItemButton>
+                    <ListItem disablePadding
+                              onClick ={()=>navigate('test1')}
+                    >
+                            <ListItemText primary="test2" />
                     </ListItem>
                 </List>
             </ContentBlock>
@@ -36,4 +31,4 @@ const KryuchkovNickPage = () => {
     );
 };
 
-export default KryuchkovNickPage;
+export default SnegirevaPolinaPage;

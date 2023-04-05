@@ -1,5 +1,6 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     "",
     "\\src",
     "\\src\\Pages",
@@ -7,5 +8,9 @@
     "\\src\\Pages\\StudentPage\\KryuchkovNick"
   ],
   "SelectedNode": "\\src\\Pages\\StudentPage\\KryuchkovNick\\KryuchkovNickPage.tsx",
+=======
+    ""
+  ],
+>>>>>>> 99cf50160bca1ae0a2f87008ad08a6d8bc590bcc
   "PreviewInSolutionExplorer": false
 }
