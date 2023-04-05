@@ -15,6 +15,11 @@ import BrikkerSashaPage from "../StudentPage/BrikkerSasha/BrikkerSashaPage";
 import ZhukovaLizaPage from "../StudentPage/ZhukovaLiza/ZhukovaLizaPage";
 import BaidinaElenaPage from "../StudentPage/BaidinaElena/BaidinaElenaPage";
 import SysolovNikitaPage from "../StudentPage/SysolovNikita/SysolovNikitaPage";
+import SysolovCategoryPage from "../StudentPage/SysolovNikita/Category/SysolovCategoryPage";
+import SysolovClientsPage from "../StudentPage/SysolovNikita/Clients/SysolovClientsPage";
+import SysolovGoodsPage from "../StudentPage/SysolovNikita/Goods/SysolovGoodsPage";
+import SysolovOrdersPage from "../StudentPage/SysolovNikita/Orders/SysolovOrdersPage";
+import SysolovProvidersPage from "../StudentPage/SysolovNikita/Providers/SysolovProvidersPage";
 
 
 const RouteComponent = () => {
@@ -32,7 +37,13 @@ const RouteComponent = () => {
                     <Route path={'MuzychenkoStacy'} element={<MuzychenkoStacyPage/>} />
                     <Route path={'ZhukovaLiza'} element={<ZhukovaLizaPage/>} />
                     <Route path={'Baidina Elena'} element={<BaidinaElenaPage/>} />
-                    <Route path={'SysolovNikita'} element={<SysolovNikitaPage/>} />
+                    <Route path={'SysolovNikita'} element={<SysolovNikitaPage/>}>
+                        <Route path={'Category1'} element={<SysolovCategoryPage/>}/>
+                        <Route path={'Clients1'} element={<SysolovClientsPage/>}/>
+                        <Route path={'Goods1'} element={<SysolovGoodsPage/>}/>
+                        <Route path={'Orders1'} element={<SysolovOrdersPage/>}/>
+                        <Route path={'Providers1'} element={<SysolovProvidersPage/>}/>
+                    </Route>
                     <Route path={'vik'} element={<TitovecVikPage />} />
 
                 </Route>
