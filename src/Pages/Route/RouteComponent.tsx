@@ -15,6 +15,12 @@ import BrikkerSashaPage from "../StudentPage/BrikkerSasha/BrikkerSashaPage";
 import ZhukovaLizaPage from "../StudentPage/ZhukovaLiza/ZhukovaLizaPage";
 import BaidinaElenaPage from "../StudentPage/BaidinaElena/BaidinaElenaPage";
 import SysolovNikitaPage from "../StudentPage/SysolovNikita/SysolovNikitaPage";
+import KomlevArtemPage from "../StudentPage/KomlevArtem/KomlevArtemPage";
+import KomlevTest2Page from "../StudentPage/KomlevArtem/Test2/KomlevTest2Page";
+import KomlevTest1Page from "../StudentPage/KomlevArtem/Test1/KomlevTest1Page";
+import KomlevTest3Page from "../StudentPage/KomlevArtem/Test3/KomlevTest3Page";
+import KomlevTest4Page from "../StudentPage/KomlevArtem/Test4/KomlevTest4Page";
+import KomlevTest5Page from "../StudentPage/KomlevArtem/Test5/KomlevTest5Page";
 
 
 const RouteComponent = () => {
@@ -34,6 +40,14 @@ const RouteComponent = () => {
                     <Route path={'Baidina Elena'} element={<BaidinaElenaPage/>} />
                     <Route path={'SysolovNikita'} element={<SysolovNikitaPage/>} />
                     <Route path={'vik'} element={<TitovecVikPage />} />
+                    <Route path={'KomlevArtem'} element={<KomlevArtemPage />} >
+                        <Route path={'Test1'} element={<KomlevTest1Page />} />
+                        <Route path={'Test2'} element={<KomlevTest2Page />} />
+                        <Route path={'Test3'} element={<KomlevTest3Page />} />
+                        <Route path={'Test4'} element={<KomlevTest4Page />} />
+                        <Route path={'Test5'} element={<KomlevTest5Page />} />
+
+                    </Route>
 
                 </Route>
             </Routes>

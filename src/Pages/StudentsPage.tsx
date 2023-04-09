@@ -72,6 +72,13 @@ const StudentsPage = () => {
                     imageSrc={'https://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg'} //ttps://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg
                     navigateTo={'/vik'}
                  />
+
+                <StudentElement
+                    fio={'Komlev Artem'}
+                    description={'__'}
+                    imageSrc={'https://www.zoopicture.ru/assets/2009/07/2542565404_542ce6b7a0.jpg'} //ttps://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg
+                    navigateTo={'/KomlevArtem'}
+                />
             </Stack>
         </div>
     )
