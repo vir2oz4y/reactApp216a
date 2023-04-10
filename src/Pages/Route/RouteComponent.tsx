@@ -52,6 +52,11 @@ import TovariBaidina from "../StudentPage/BaidinaElena/Tovari/TovariBaidina";
 import KlientiBaidina from "../StudentPage/BaidinaElena/Klienti/KlientiBaidina";
 import ZakaziBaidina from "../StudentPage/BaidinaElena/Zakazi/ZakaziBaidina";
 import KategoriBaidina from "../StudentPage/BaidinaElena/Kategori/KategoriBaidina";
+import KryuchkovCategoryPage from "../StudentPage/KryuchkovNick/Category/KryuchkovCategoryPage";
+import KryuchkovClientsPage from "../StudentPage/KryuchkovNick/Clients/KryuchkovClientsPage";
+import KryuchkovGoodsPage from "../StudentPage/KryuchkovNick/Goods/KryuchkovGoodsPage";
+import KryuchkovOrdersPage from "../StudentPage/KryuchkovNick/Orders/KryuchkovOrdersPage";
+import KryuchkovProvidersPage from "../StudentPage/KryuchkovNick/Providers/KryuchkovProvidersPage";
 
 
 
@@ -62,10 +67,6 @@ const RouteComponent = () => {
             <Routes>
                 <Route path="/" element={<MainPage/>}>
                     <Route index element={<StudentsPage/>}/>
-
-                    <Route path={'teacher'} element={<KryuchkovNickPage/>}/>
-                    <Route path={'akyuzleyla'} element={<AkyuzLeylaPage/>}/>
-                    <Route path={'brikkersasha'} element={<BrikkerSashaPage/>}/>
 
                     <Route path={'SnegirevaPolina'} element={<SnegirevaPolinaPage/>}>
                         <Route path={'test1'} element={<Snegirevatest1Page/>}/>
@@ -87,10 +88,16 @@ const RouteComponent = () => {
                         <Route path={'kategorii'} element={<MuzychenkoKategorii/>}/>
                     </Route>
                     
-                   
-                    <Route path={'vik'} element={<TitovecVikPage/>}/>
 
-                    <Route path={'teacher'} element={<KryuchkovNickPage />} />
+                    <Route path={'teacher'} element={<KryuchkovNickPage />} >
+                        <Route path={'Category'} element={<KryuchkovCategoryPage/>}/>
+                        <Route path={'Clients'} element={<KryuchkovClientsPage/>}/>
+                        <Route path={'Goods'} element={<KryuchkovGoodsPage/>}/>
+                        <Route path={'Orders'} element={<KryuchkovOrdersPage/>}/>
+                        <Route path={'Providers'} element={<KryuchkovProvidersPage/>}/>
+                    </Route>
+
+
                     <Route path={'akyuzleyla'} element={<AkyuzLeylaPage />} />
                     <Route path={'brikkersasha'} element={<BrikkerSashaPage />} />
 
