@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../../../Components/Header/Header";
 import ContentBlock from "../../../Components/ContentBlock/ContentBlock";
 import {List, ListItem, ListItemButton, ListItemText} from "@mui/material";
-import {useNavigate} from "react-router-dom";
+import {Outlet, useNavigate} from "react-router-dom";
 
 const ZhukovaLizaPage = () => {
     const navigate = useNavigate();
@@ -11,23 +11,73 @@ const ZhukovaLizaPage = () => {
             <Header studentFio={'Жукова Лиза'}/>
 
             <ContentBlock>
-                <List>
-                    <ListItem disablePadding>
-                        <ListItemButton
+                <div style={{display:"flex"}}>
+                    <List style={{width:"250px"}}>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
                                 onClick={()=>navigate('Test1')}
 
-                        >
-                            <ListItemText primary="Test1" />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton
-                            onClick={()=>navigate('Test2')}
-                        >
-                            <ListItemText primary="Test2" />
-                        </ListItemButton>
-                    </ListItem>
-                </List>
+                            >
+                                <ListItemText primary="Test1"  style={{textAlign:"center"}} />
+                            </ListItemButton>
+                        </ListItem>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
+                                onClick={()=>navigate('Test2')}
+                            >
+                                <ListItemText primary="Test2" style={{textAlign:"center"}} />
+                            </ListItemButton>
+                        </ListItem>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
+                                onClick={()=>navigate('Category1')}
+                            >
+                                <ListItemText primary="Category" style={{textAlign:"center"}} />
+                            </ListItemButton>
+                        </ListItem>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
+                                onClick={()=>navigate('Clients1')}
+                            >
+                                <ListItemText primary="Clients" style={{textAlign:"center"}}/>
+                            </ListItemButton>
+                        </ListItem>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
+                                onClick={()=>navigate('Orders1')}
+                            >
+                                <ListItemText primary="Orders" style={{textAlign:"center"}}/>
+                            </ListItemButton>
+                        </ListItem>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
+                                onClick={()=>navigate('Providers1')}
+                            >
+                                <ListItemText primary="Providers" style={{textAlign:"center"}} />
+                            </ListItemButton>
+                        </ListItem>
+
+                        <ListItem disablePadding>
+                            <ListItemButton
+                                onClick={()=>navigate('Goods1')}
+                            >
+                                <ListItemText primary="Goods" style={{textAlign:"center"}} />
+                            </ListItemButton>
+                        </ListItem>
+
+
+
+                    </List>
+                    <Outlet/>
+
+                </div>
+
             </ContentBlock>
         </div>
     );
