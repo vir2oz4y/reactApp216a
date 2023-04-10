@@ -6,7 +6,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
+
+
 const BrikkerSashaPage = () => {
 
     const navigate = useNavigate();
@@ -17,7 +19,7 @@ const BrikkerSashaPage = () => {
             <Header studentFio={'Brikker Sasha'} />
 
             <ContentBlock>
-                <List>
+              <List>
                     <ListItem disablePadding>
                         <ListItemButton onClick={()=>navigate('test1')} >
 
@@ -30,7 +32,42 @@ const BrikkerSashaPage = () => {
                         </ListItemButton>
 
                     </ListItem>
+
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => navigate('category')} >
+
+                            <ListItemText primary="category" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => navigate('postavshiki')} >
+
+                            <ListItemText primary="postavshiki" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => navigate('tovari')} >
+
+                            <ListItemText primary="tovari" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => navigate('client')} >
+
+                            <ListItemText primary="client" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => navigate('zakazi')} >
+
+                            <ListItemText primary="zakazi" />
+                        </ListItemButton>
+                    </ListItem>
+                    
                 </List>
+
+                <Outlet />
+
             </ContentBlock>
         </div>
     );

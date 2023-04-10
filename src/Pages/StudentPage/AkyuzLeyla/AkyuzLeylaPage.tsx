@@ -5,7 +5,10 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
+
+
+
 const AkyuzLeylaPage = () => {
     const navigate = useNavigate();
     return (
@@ -26,7 +29,43 @@ const AkyuzLeylaPage = () => {
                         </ListItemButton>
 
                     </ListItem>
+
+                     
+                <ListItem disablePadding>
+                    <ListItemButton onClick={() => navigate('category')} >
+
+                        <ListItemText primary="category" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton onClick={() => navigate('postavshiki')} >
+
+                        <ListItemText primary="postavshiki" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton onClick={() => navigate('tovari')} >
+
+                        <ListItemText primary="tovari" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton onClick={() => navigate('client')} >
+
+                        <ListItemText primary="client" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton onClick={() => navigate('zakazi')} >
+
+                        <ListItemText primary="zakazi" />
+                    </ListItemButton>
+                </ListItem>
                 </List>
+
+                <Outlet/>
+
+
             </ContentBlock>
         </div>
     );
