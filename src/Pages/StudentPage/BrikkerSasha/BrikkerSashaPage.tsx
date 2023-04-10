@@ -8,6 +8,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Outlet, useNavigate } from 'react-router-dom';
 
+
 const BrikkerSashaPage = () => {
 
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ const BrikkerSashaPage = () => {
             <Header studentFio={'Brikker Sasha'} />
 
             <ContentBlock>
-                <List>
+              <List>
                     <ListItem disablePadding>
                         <ListItemButton onClick={()=>navigate('test1')} >
 
@@ -31,6 +32,7 @@ const BrikkerSashaPage = () => {
                         </ListItemButton>
 
                     </ListItem>
+
                     <ListItem disablePadding>
                         <ListItemButton onClick={() => navigate('category')} >
 
@@ -66,7 +68,6 @@ const BrikkerSashaPage = () => {
 
                 <Outlet />
 
-           
             </ContentBlock>
         </div>
     );

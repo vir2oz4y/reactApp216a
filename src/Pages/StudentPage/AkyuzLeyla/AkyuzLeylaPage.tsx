@@ -6,6 +6,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { Outlet, useNavigate } from 'react-router-dom';
+
+
+
 const AkyuzLeylaPage = () => {
     const navigate = useNavigate();
     return (
@@ -26,6 +29,7 @@ const AkyuzLeylaPage = () => {
                         </ListItemButton>
 
                     </ListItem>
+
                      
                 <ListItem disablePadding>
                     <ListItemButton onClick={() => navigate('category')} >
@@ -60,6 +64,8 @@ const AkyuzLeylaPage = () => {
                 </List>
 
                 <Outlet/>
+
+
             </ContentBlock>
         </div>
     );

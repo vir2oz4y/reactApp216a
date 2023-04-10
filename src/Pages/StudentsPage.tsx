@@ -3,11 +3,14 @@ import StudentElement from "../Components/StudentElement/StudentElement";
 import {Stack} from "@mui/material";
 import Header from "../Components/Header/Header";
 
+
 const StudentsPage = () => {
 
     return (
         <div>
+
             <Header/>
+            
             <Stack direction="row"  flexWrap={'wrap'} gap={'1em'} padding={'1em'}>
 
                 <StudentElement
