@@ -75,6 +75,14 @@ const StudentsPage = () => {
                     imageSrc={'https://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg'} //ttps://www.meme-arsenal.com/memes/64c01ec8beb7fe78dc45f53eabb5f323.jpg
                     navigateTo={'/vik'}
                  />
+
+                <StudentElement
+                    fio={'Ледовская Ольга Владимировна'}
+                    description={'💜'}
+                    imageSrc={'https://sun9-61.userapi.com/impg/nB-hRhQvdoi8RMpv6T1pFDqQEoj5y4gwdHaeYg/1dB7H7EDXtk.jpg?size=1200x1600&quality=96&sign=f01d94c597695f5063aacdaa0db4132a&type=album'}
+                    navigateTo={'/Ledovskaya Olga'}
+                />
+
             </Stack>
         </div>
     )
