@@ -1,0 +1,20 @@
+.snegireva_popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__content{
+    background-color: violet;
+    padding: 1em;
+    border-radius: 1em;
+    min-width: 400px;
+    &__title{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: .5em;
+      border-bottom: solid 1px #cccccc;
+      margin-bottom: .5em;
+    }
+  }
+}
