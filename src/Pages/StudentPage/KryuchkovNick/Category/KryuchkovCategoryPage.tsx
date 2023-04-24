@@ -6,6 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import KryuchkovPopup from "../../../../Components/Kryuchkov/KryuchkovPopup/KryuchkovPopup";
 import CreateCategoryPopup from "./Popups/CreateCategoryPopup";
+import EditCategoryPopup from './Popups/EditCategoryPopup';
 
 
 const KryuchkovCategoryPage = () => {
@@ -42,7 +43,10 @@ const KryuchkovCategoryPage = () => {
                         <DeleteIcon/>
                     </IconButton>
 
-                    <IconButton aria-label="edit">
+                    <IconButton
+                        aria-label="edit"
+                        onClick={()=>setEditedCategory(e.row)}
+                    >
                         <EditIcon/>
                     </IconButton>
                 </div>
@@ -56,7 +60,28 @@ const KryuchkovCategoryPage = () => {
         )
     }
 
+    const onCreate = (category:Category) =>{
+        setCategoryList(prev=>[category, ...prev]);
+    }
+
+    const onEdit = (category:Category) =>{
+        setCategoryList(prev=>{
+
+            const current = prev.find(el=>el.id === category.id);
+
+            if (current){
+                current.name = category.name;
+            }
+
+            return [...prev];
+        })
+    }
+
+
     const [createPopupOpened, setCreatePopupOpened] = useState(false)
+
+    const [editedCategory, setEditedCategory] =
+        useState<Category|null>(null)
 
     return (
         <div style={{width: '100%'}}>
@@ -64,7 +89,16 @@ const KryuchkovCategoryPage = () => {
             {createPopupOpened && <CreateCategoryPopup
                 open={createPopupOpened}
                 onClose={()=>setCreatePopupOpened(false)}
+                onCreate={(newCategory)=>onCreate(newCategory)}
             />}
+
+            {editedCategory !== null && <EditCategoryPopup
+                open={editedCategory !== null}
+                onClose={()=>setEditedCategory(null)}
+                category={editedCategory}
+                onEdit={(newCategory)=>onEdit(newCategory)}
+            />}
+
 
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
                 <h1>Категории</h1>

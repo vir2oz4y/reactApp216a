@@ -15,6 +15,7 @@ const CreateCategoryPopup = ({open, onClose, onCreate}:Props) => {
             id:Math.random(),
             name:categoryName
         })
+        onClose();
     }
 
     return (
@@ -27,12 +28,17 @@ const CreateCategoryPopup = ({open, onClose, onCreate}:Props) => {
                 <TextField
                     label="Название категории"
                     variant="standard"
+                    value={categoryName}
+                    onChange={(e)=>
+                        setCategoryName(e.target.value)
+                    }
                 />
 
                 <div style={{display:'flex', justifyContent: 'center'}}>
                     <Button
                         color={'primary'}
                         variant={'contained'}
+                        onClick={()=>onCreateClick()}
                     >
                         Создать
                     </Button>
