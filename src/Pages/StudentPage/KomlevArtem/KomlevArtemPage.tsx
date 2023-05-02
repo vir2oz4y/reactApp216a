@@ -15,35 +15,35 @@ const KomlevArtemPage = () => {
             <ContentBlock>
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton onClick={()=>navigate('StudentsPage')}>
-                            <ListItemText primary="StudentsPage" />
+                        <ListItemButton onClick={()=>navigate('Category')}>
+                            <ListItemText primary='Category' />
                         </ListItemButton>
                     </ListItem>
+
                     <ListItem disablePadding>
-                        <ListItemButton onClick={()=>navigate('test1')}>
-                            <ListItemText primary="Test1" />
+                        <ListItemButton onClick={()=>navigate('Client')}>
+                            <ListItemText primary='Client' />
                         </ListItemButton>
                     </ListItem>
+
                     <ListItem disablePadding>
-                        <ListItemButton onClick={()=>navigate('test2')}>
-                            <ListItemText primary="Test2" />
+                        <ListItemButton onClick={()=>navigate('Goods')}>
+                            <ListItemText primary='Manufacturer' />
                         </ListItemButton>
                     </ListItem>
+
                     <ListItem disablePadding>
-                        <ListItemButton onClick={()=>navigate('test3')}>
-                            <ListItemText primary="Test3" />
+                        <ListItemButton onClick={()=>navigate('Order')}>
+                            <ListItemText primary='Order' />
                         </ListItemButton>
                     </ListItem>
+
                     <ListItem disablePadding>
-                        <ListItemButton onClick={()=>navigate('test4')}>
-                            <ListItemText primary="Test4" />
+                        <ListItemButton onClick={()=>navigate('Providers')}>
+                            <ListItemText primary='Product' />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton onClick={()=>navigate('test5')}>
-                            <ListItemText primary="Test5" />
-                        </ListItemButton>
-                    </ListItem>
+
                 </List>
 
                 <Outlet/>
