@@ -1,7 +1,7 @@
-import React, {useEffect,useState} from 'react';
+import React, {useState} from 'react';
 import {DataGrid, GridColDef} from "@mui/x-data-grid";
 import {Postavshiki} from "./Models";
-// @ts-ignorenpm install @mui/material @emotion/react @emotion/styled
+// @ts-ignore
 import {Button, IconButton} from "@mui/material";
 // @ts-ignore
 import DeleteIcon from '@mui/icons-material/Delete';
