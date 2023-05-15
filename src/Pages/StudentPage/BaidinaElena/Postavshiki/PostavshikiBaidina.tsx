@@ -85,14 +85,14 @@ const PostavshikiBaidina = () => {
                 onEdit={(newPostavshik:Postavshiki)=>onEdit(newPostavshik)}
             />}
             <div style={{display: "flex", justifyContent: "space-between"}}>
-                <h1>Категории</h1>
+                <h1>Поставщики</h1>
                 <div>
                     <Button
                         color={'primary'}
                         variant={'contained'}
                         onClick={()=>setCreatePopupOpened(true)}
                     >
-                        Создать новую категорию
+                        Создать нового поставщика
                     </Button>
                 </div>
             </div>
